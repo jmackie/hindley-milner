@@ -1,0 +1,24 @@
+cabal-version: 2.4
+
+name: hm
+version: 1.0.0
+synopsis: Hindley-Milner implementation
+homepage: https://github.com/jmackie/hm
+license: MIT
+license-file: LICENSE
+author: Jordan Mackie
+maintainer: jmackie@protonmail.com
+category: Language
+
+executable hm
+    main-is: Main.hs
+    default-language: Haskell2010
+    build-depends:
+        base ^>=4.12.0.0
+      , recursion-schemes
+      , free
+      , mtl
+      , containers
+      , text
+      , comonad
+      , lens-family-core
